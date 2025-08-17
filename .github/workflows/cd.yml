@@ -29,7 +29,7 @@ jobs:
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
-      - name: 'Set up Cloud SDK'
+      - name: 'Setup Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
 
       - name: 'Build docker image and push to gcl'
